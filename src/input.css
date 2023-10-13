@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply rounded-full bg-brightRed p-2 px-5 font-medium text-varyLightGray shadow-md shadow-brightRed duration-300 hover:opacity-90 hover:shadow-sm hover:shadow-brightRed;
+  }
+  .btn-secondary {
+    @apply rounded-full bg-varyLightGray p-2 px-5 font-medium text-brightRed shadow-sm shadow-veryPaleRed duration-300 hover:text-darkGrayishBlue hover:opacity-90 hover:shadow-sm hover:shadow-veryPaleRed;
+  }
+}
+
+@layer components {
+  :root {
+    --swiper-pagination-color: hsl(12, 88%, 59%);
+    --swiper-pagination-bullet-inactive-color: hsl(12, 88%, 59%);
+    --swiper-pagination-bullet-inactive-opacity: 0.3;
+  }
+}
